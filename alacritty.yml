@@ -9,12 +9,14 @@ window:
 
   class:
     instance: Alacritty
-
     general: Alacritty
+      
 
+#scrolling history
 scrolling:
   history: 5000
 
+#Font 
 font:
   normal:
     family: MesloLGM Nerd Font
@@ -32,20 +34,20 @@ font:
     family: MesloLGM Nerd Font
     style: Bold Italic
 
+# Font size
   size: 10.0
-
   offset:
     x: 0
     y: 1
 
 draw_bold_text_with_bright_colors: true
 
+# Color Scheme
 colors:
     # Default colors
     primary:
       background: '0x24283b'
       foreground: '0xa9b1d6'
-
     # Normal colors
     normal:
       black:   '0x32344a'
@@ -56,7 +58,6 @@ colors:
       magenta: '0xad8ee6'
       cyan:    '0x449dab'
       white:   '0x787c99'
-
     # Bright colors
     bright:
       black:   '0x444b6a'
@@ -67,7 +68,8 @@ colors:
       magenta: '0xbb9af7'
       cyan:    '0x0db9d7'
       white:   '0xacb0d0'
-            
+
+# key bindings
 key_bindings:
   - { key: V,         mods: Control|Shift, action: Paste                       }
   - { key: C,         mods: Control|Shift, action: Copy                        }
